@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>aapkapainter</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            -webkit-font-kerning: none;
+            font-kerning: none;
+            text-rendering: optimizeLegibility;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            word-break: break-word;
+            outline: 0;
+            text-decoration: none;
+            margin: 0;
+        }
+
+        :after,
+        :before {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            color: #000;
+            overflow-x: hidden;
+            background-color: #fff;
+        }
+
+        body,
+        html {
+            height: 100%;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        figure {
+            margin: 0;
+            display: block;
+        }
+
+        .scroll:hover {
+            animation: scrollslide 20s linear infinite;
+            -webkit-animation: scrollslide 20s linear infinite;
+            -moz-animation: scrollslide 20s linear infinite;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        .align-items {
+            background-color: #9baf95;
+            padding: 3px 15px;
+            margin-bottom: 100px;
+        }
+
+        .align-items p {
+            font-size: 18px;
+            font-weight: 500;
+            color: #000000;
+            text-transform: initial;
+            padding: 10px 0;
+        }
+
+        .align-items .center {
+            text-align: center;
+        }
+
+        .align-items .right {
+            text-align: right;
+        }
+        
+        .painter-layout{
+            margin:0 10px 50px;
+            padding: 3px 3px 0;
+            border-left:2px solid #b2b2b2;
+            border-right: 2px solid #4c4c4c;
+        }
+        
+        .painter-layout .top,.painter-layout .painter-middle .left-align,.painter-layout .painter-middle .right-align,.painter-layout .painter-middle .middle-align,.painter-layout .bottom{
+            border-top:2px solid #4c4c4c;
+            border-left:2px solid #4c4c4c;
+            border-right:2px solid #b2b2b2;
+            border-bottom:2px solid #b2b2b2;
+        }
+        
+        .painter-layout .top{
+            background-color: #5b793b;
+            width: 100%;
+            height: 45px;
+        }
+        
+        .painter-layout .painter-middle{
+            display: flex;
+            margin: 4px 0;
+        }
+        .painter-layout .painter-middle .middle-align{
+            margin: 0 10px;
+            width: 50%;
+            padding: 30px 45px 36px 3px;
+        }
+        .painter-layout .painter-middle .middle-align img{
+            width:100%;
+        }
+        
+        .painter-layout .painter-middle .left-align{
+            width:30%;
+        }
+        .painter-layout .painter-middle .right-align{
+            width: 20%;
+        }
+        
+        .painter-layout .bottom{
+            background-color: #253161;
+            width: 100%;
+            height: 35px;
+        }
+        
+        @media only screen and (max-width:812px) {
+            .align-items p{
+                font-size: 17px;
+            }
+        }
+
+        @media only screen and (max-width:580px) {
+
+            .align-items .right,
+            .align-items p {
+                text-align: center;
+            }
+            .align-items p{
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="align-items">
+        <div class="left">
+            <p>This paragraph is left alighned.</p>
+        </div>
+        <div class="center">
+            <p>This paragraph is center alighned.</p>
+        </div>
+        <div class="right">
+            <p>This paragraph is right alighned.</p>
+        </div>
+    </section>
+    
+    <section class="painter-layout">
+        <div class="top">
+            
+        </div>
+        <div class="painter-middle">
+            <div class="left-align">
+                
+            </div>
+            
+            <div class="middle-align">
+                <figure>
+                    <img src="images/frog-image.jpg" alt="amzing image">
+                </figure>
+            </div>
+            
+            <div class="right-align">
+                
+            </div>
+        </div>
+        <div class="bottom">
+            
+        </div>
+    </section>
+    
+</body>
+</html>
